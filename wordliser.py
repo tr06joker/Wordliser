@@ -1,11 +1,12 @@
 file = open("worldlist.txt","w")
 
-print("Wordliser -- Version: V1.0 -- Yapan: tr06joker")
+print("Wordliser -- Version: V1.1 -- Yapan: tr06joker")
 
 soru1 = input("Adı: ")
 soru2 = input("Soyadı: ")
 soru3 = input("Doğum Tarihi(YIL): ")
-soru4 = input("Kız Arkadaşı: ")
+soru4 = input("Sevgilisi(Veya Yakın Arkadaşı): ")
+soru5 = input("Evcil Hayvanı Adı: ")
 
 file.write(soru1+"123\n")
 file.write("123"+soru1+"\n")
@@ -25,6 +26,10 @@ file.write(soru4+soru3+"\n")
 file.write(soru1+soru4+"\n")
 file.write(soru4+soru1+"\n")
 file.write(soru2+soru4+"\n")
-file.write(soru4+soru2)
+file.write(soru4+soru2+"\n")
+file.write(soru5+soru1+"\n")
+file.write(soru1+soru5+"\n")
+file.write(soru5+soru3+"\n")
+file.write(soru3+soru5)
 
 file.close()
